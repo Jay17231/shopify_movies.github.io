@@ -1,0 +1,16 @@
+<%- include('header') -%>
+    <div class="container">
+        <h1 class="display-4 text-center mb-5 mt-5">Take a dive!</h1>
+        <hr class="mt-5 mb-5">
+        <div class="row">
+            <form action="/movies-list" method="GET" class="w-100">
+                <div class="input-group mb-3">
+                    <input type="text" name="movie" class="form-control" placeholder="Enter the name of the movie" aria-label="Enter the name of the movie" aria-describedby="movie-submit" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-dark bg-dark text-light" type="submit" id="movie-submit"><i class="fa fa-search"></i> Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('footer') -%>

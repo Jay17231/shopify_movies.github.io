@@ -1,0 +1,111 @@
+.wrapper {
+    padding: 80px 0;
+}
+
+.mov-card {
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.card-image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.2;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.img-overlay:hover {
+    opacity: 0.5;
+}
+
+.img-overlay i {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.img-overlay a:hover {
+    text-decoration: none;
+}
+
+.img-overlay:hover i {
+    display: block;
+    color: #aaa;
+}
+
+.img-overlay i:hover {
+    color: #fff;
+    transition: 0.5 all ease-out;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.mov-card .card-body,
+.mov-card .card-footer {
+    font-size: 16px;
+    display: none;
+}
+
+.mov-card:hover {
+    transform: scale(1.1);
+    transition: 0.8s ease-out;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.mov-card:hover .card-body,
+.mov-card:hover .card-footer {
+    display: block;
+}
+
+.mov-card:hover .card-img-title {
+    display: none;
+}
+
+hr.title-divider {
+    width: 50px;
+    border-color: #95BF46;
+    text-align: left;
+    border-width: 3px;
+    margin-left: 0;
+}
+
+span.topic {
+    font-weight: 700;
+}
+
+.card-img-title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+hr.result-divider {
+    border-width: 5px;
+    width: 20%;
+    margin-left: 0;
+    border-color: #95BF46;
+}
